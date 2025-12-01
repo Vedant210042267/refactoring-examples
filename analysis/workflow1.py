@@ -25,7 +25,7 @@ with open('weights.csv') as filew:
 results = []
 for i in range(len(data1)):
     s = 0
-    for j in range(len(w)):
+    for j in weights:
         d = data1[i][j] - data2[i][j]
         s += weights[j] * abs(d)
     results.append(s)
